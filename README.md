@@ -1,10 +1,10 @@
 PrestaCMSSitemapBridgeBundle
 ============================
 
-<!-- [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSSitemapBridgeBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSSitemapBridgeBundle)
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSSitemapBridgeBundle/badges/quality-score.png?s=a5721c174fead4cb642be18f44965d15d024333c)](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSSitemapBridgeBundle/)
+[![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSSitemapBridgeBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSSitemapBridgeBundle)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSSitemapBridgeBundle/badges/quality-score.png?s=7ef761de02aa7f88127aee6163fee414fe1823ca)](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSSitemapBridgeBundle/)
 [![Latest Stable Version](https://poser.pugx.org/presta/cms-sitemap-bridge-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-sitemap-bridge-bundle)
-[![Total Downloads](https://poser.pugx.org/presta/cms-sitemap-bridge-bundle/downloads.png)](https://packagist.org/packages/presta/cms-sitemap-bridge-bundle) -->
+[![Total Downloads](https://poser.pugx.org/presta/cms-sitemap-bridge-bundle/downloads.png)](https://packagist.org/packages/presta/cms-sitemap-bridge-bundle)
 
 #Overview #
 
