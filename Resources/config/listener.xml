@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="sandbox.listener.sitemap.class">Sandbox\SitemapBundle\EventListener\PrestaSitemapListener</parameter>
+        <parameter key="presta_cms.listener.sitemap.class">Presta\CMSSitemapBridgeBundle\EventListener\PrestaSitemapListener</parameter>
     </parameters>
 
     <services>
-        <service id="sandbox.listener.sitemap" class="%sandbox.listener.sitemap.class%">
+        <service id="presta_cms.listener.sitemap" class="%presta_cms.listener.sitemap.class%">
             <argument type="service" id="presta_cms.manager.website" />
             <argument type="service" id="presta_cms.manager.route" />
             <argument type="service" id="router" />

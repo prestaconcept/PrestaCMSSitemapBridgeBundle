@@ -7,7 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Sandbox\SitemapBundle\EventListener;
+namespace Presta\CMSSitemapBridgeBundle\EventListener;
 
 use Presta\CMSCoreBundle\Model\RouteManager;
 use Presta\CMSCoreBundle\Model\WebsiteManager;
@@ -34,11 +34,6 @@ class PrestaSitemapListener implements SitemapListenerInterface
     protected $routerManager;
 
     /**
-     * @var RouterInterface
-     */
-    protected $router;
-
-    /**
      * @param WebsiteManager $websiteManager
      * @param RouteManager   $routerManager
      */
@@ -46,7 +41,6 @@ class PrestaSitemapListener implements SitemapListenerInterface
     {
         $this->websiteManager   = $websiteManager;
         $this->routeManager     = $routerManager;
-        $this->router           = $router;
     }
 
     /**
