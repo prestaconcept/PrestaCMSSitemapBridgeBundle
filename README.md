@@ -6,6 +6,8 @@ PrestaCMSSitemapBridgeBundle
 [![Latest Stable Version](https://poser.pugx.org/presta/cms-sitemap-bridge-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-sitemap-bridge-bundle)
 [![Total Downloads](https://poser.pugx.org/presta/cms-sitemap-bridge-bundle/downloads.png)](https://packagist.org/packages/presta/cms-sitemap-bridge-bundle)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/fa3389b6-5133-4090-9be5-f060ab6376ef/big.png)](https://insight.sensiolabs.com/projects/fa3389b6-5133-4090-9be5-f060ab6376ef)
+
 #Overview #
 
 [WIP] PrestaSitemapBundle connector for PrestaCMS
