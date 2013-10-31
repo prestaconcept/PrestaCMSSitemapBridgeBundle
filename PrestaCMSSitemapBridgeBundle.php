@@ -9,9 +9,11 @@
  */
 namespace Presta\CMSSitemapBridgeBundle;
 
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
 /**
  * @author Alain Flaus <aflaus@prestaconcept.net>
  */
-class PrestaCMSSitemapBridgeBundle
+class PrestaCMSSitemapBridgeBundle extends Bundle
 {
 }
