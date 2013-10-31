@@ -2,7 +2,7 @@
     "name": "presta/cms-sitemap-bridge-bundle",
     "type": "symfony-bundle",
     "description": "PrestaCMS Sitemap Bridge bundle : PrestaSitemapBundle connector for PrestaCMS",
-    "keywords": ["symfony2", "bundle", "cms", "symfony-cmf", "prestaconcept"],
+    "keywords": ["symfony2", "bundle", "cms", "presta-cms", "symfony-cmf", "prestaconcept", "sitemap"],
     "homepage": "https://github.com/prestaconcept/PrestaCMSSitemapBridgeBundle",
     "license": "MIT",
     "authors": [
@@ -16,7 +16,7 @@
     "require": {
         "php": ">=5.3.2",
         "presta/cms-core-bundle": "1.0.*",
-        "presta/sitemap-bundle": "~1.3"
+        "presta/sitemap-bundle": "~1.0"
     },
     "autoload": {
         "psr-0": { "Presta\\CMSSitemapBridgeBundle": "" }
