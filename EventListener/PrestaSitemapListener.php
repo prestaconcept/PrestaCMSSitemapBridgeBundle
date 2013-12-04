@@ -54,11 +54,13 @@ class PrestaSitemapListener implements SitemapListenerInterface
             throw new \Exception('Current website must be define');
         }
 
+        $baseUrl = $this->websiteManager->getBaseUrlForLocale($website->getLocale());
+
         $routes = $this->routeManager->getRoutesForWebsite($website);
         foreach ($routes as $route) {
             if (strlen($route->getVariablePattern()) == 0) {
                 $event->getGenerator()->addUrl(
-                    new UrlConcrete($route->getPath()),
+                    new UrlConcrete($baseUrl . $route->getPath()),
                     $website->getName()
                 );
             }
