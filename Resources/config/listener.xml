@@ -12,6 +12,7 @@
         <service id="presta_cms.listener.sitemap" class="%presta_cms.listener.sitemap.class%">
             <argument type="service" id="presta_cms.manager.website" />
             <argument type="service" id="presta_cms.manager.route" />
+            <argument type="service" id="presta_cms.manager.sitemap_bridge" />
             <argument type="service" id="router" />
             <tag name="presta.sitemap.listener" />
         </service>

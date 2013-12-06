@@ -33,5 +33,12 @@ class PrestaCMSSitemapBridgeExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('listener.xml');
+        $loader->load('manager.xml');
+
+        // Init filters_page configuration
+        $cmsSitemapBridgeManager = $container->getDefinition('presta_cms.manager.sitemap_bridge');
+        if (isset($config['url'])) {
+            $cmsSitemapBridgeManager->addMethodCall('addUrlConfiguration', array($config['url']));
+        }
     }
 }
