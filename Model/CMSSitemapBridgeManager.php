@@ -23,7 +23,9 @@ class CMSSitemapBridgeManager
      */
     protected $configurations;
 
-    public function __construct(){}
+    public function __construct()
+    {
+    }
 
     /**
      * @param array $configuration
