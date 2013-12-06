@@ -23,7 +23,18 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('presta_cms_sitemap_bridge');
+        $rootNode = $treeBuilder->root('presta_cms_sitemap_bridge');
+
+        $rootNode
+            ->children()
+                ->arrayNode('url')
+                    ->children()
+                        ->arrayNode('excluded')
+                            ->prototype('scalar')->end()
+                        ->end()
+                    ->end()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }

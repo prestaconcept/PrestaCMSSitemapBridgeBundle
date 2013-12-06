@@ -11,6 +11,8 @@ namespace Presta\CMSSitemapBridgeBundle\EventListener;
 
 use Presta\CMSCoreBundle\Model\RouteManager;
 use Presta\CMSCoreBundle\Model\WebsiteManager;
+use Presta\CMSSitemapBridgeBundle\Model\CMSSitemapBridgeManager;
+use Presta\CMSSitemapBridgeBundle\Model\FilterManager;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Service\SitemapListenerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
@@ -34,13 +36,19 @@ class PrestaSitemapListener implements SitemapListenerInterface
     protected $routerManager;
 
     /**
+     * @var CMSSitemapBridgeManager
+     */
+    protected $cmsSitemapBridgeManager;
+
+    /**
      * @param WebsiteManager $websiteManager
      * @param RouteManager   $routerManager
      */
-    public function __construct(WebsiteManager $websiteManager, RouteManager $routerManager)
+    public function __construct(WebsiteManager $websiteManager, RouteManager $routerManager, CMSSitemapBridgeManager $cmsSitemapBridgeManager)
     {
-        $this->websiteManager   = $websiteManager;
-        $this->routeManager     = $routerManager;
+        $this->websiteManager           = $websiteManager;
+        $this->routeManager             = $routerManager;
+        $this->cmsSitemapBridgeManager  = $cmsSitemapBridgeManager;
     }
 
     /**
@@ -55,10 +63,9 @@ class PrestaSitemapListener implements SitemapListenerInterface
         }
 
         $baseUrl = $this->websiteManager->getBaseUrlForLocale($website->getLocale());
-
-        $routes = $this->routeManager->getRoutesForWebsite($website);
+        $routes  = $this->routeManager->getRoutesForWebsite($website);
         foreach ($routes as $route) {
-            if (strlen($route->getVariablePattern()) == 0) {
+            if ($this->cmsSitemapBridgeManager->isValidRoute($route)) {
                 $event->getGenerator()->addUrl(
                     new UrlConcrete($baseUrl . $route->getPath()),
                     $website->getName()

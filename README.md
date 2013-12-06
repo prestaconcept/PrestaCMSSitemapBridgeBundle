@@ -12,8 +12,13 @@ PrestaCMSSitemapBridgeBundle
 
 [WIP] PrestaSitemapBundle connector for PrestaCMS
 
+# Configuration
 
-
+    presta_cms_sitemap_bridge:
+        url:
+            excluded:
+                - /404
+                - /500
 
 ## Ask for help ##
 
