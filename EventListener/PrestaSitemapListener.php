@@ -12,7 +12,6 @@ namespace Presta\CMSSitemapBridgeBundle\EventListener;
 use Presta\CMSCoreBundle\Model\RouteManager;
 use Presta\CMSCoreBundle\Model\WebsiteManager;
 use Presta\CMSSitemapBridgeBundle\Model\CMSSitemapBridgeManager;
-use Presta\CMSSitemapBridgeBundle\Model\FilterManager;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Service\SitemapListenerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
