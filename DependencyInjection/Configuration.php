@@ -28,9 +28,10 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('url')
+                ->addDefaultsIfNotSet()
                     ->children()
                         ->arrayNode('excluded')
-                            ->prototype('scalar')->end()
+                            ->prototype('scalar')->defaultNull()->end()
                         ->end()
                     ->end()
                 ->end()
