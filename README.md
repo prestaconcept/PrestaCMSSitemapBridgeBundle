@@ -7,10 +7,15 @@ PrestaCMSSitemapBridgeBundle
 [![Total Downloads](https://poser.pugx.org/presta/cms-sitemap-bridge-bundle/downloads.png)](https://packagist.org/packages/presta/cms-sitemap-bridge-bundle)
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/fa3389b6-5133-4090-9be5-f060ab6376ef/big.png)](https://insight.sensiolabs.com/projects/fa3389b6-5133-4090-9be5-f060ab6376ef)
+[![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSSitemapBridgeBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSSitemapBridgeBundle)
 
 #Overview #
 
-[WIP] PrestaSitemapBundle connector for PrestaCMS
+PrestaSitemapBundle connector for PrestaCMS. This bundle adds your PrestaCMS pages into your sitemap.xml.
+
+## Issue tracker ##
+
+:clipboard: Issues are managed in [prestaconcept/open-source-management](https://github.com/prestaconcept/open-source-management) to centralize our open source activity.
 
 # Configuration
 
@@ -19,6 +24,15 @@ PrestaCMSSitemapBridgeBundle
             excluded:
                 - /404
                 - /500
+
+## Demonstration ##
+
+For a ready to use demonstration of this bundle you should check the [prestacms-sandox available on github][2].
+
+Sandbox is also deployed for a live demonstration :
+
+-   [Frontend site][5]
+-   [Administration Site][6]
 
 ## Ask for help ##
 
@@ -40,8 +54,10 @@ Thanks to
 
 Released under the MIT License
 
+[2]: https://github.com/prestaconcept/prestacms-sandbox
 [3]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
-
+[5]: http://sandbox.prestacms.com/
+[6]: http://sandbox.prestacms.com/admin
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacmssitemapbridgebundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
