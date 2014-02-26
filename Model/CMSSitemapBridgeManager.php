@@ -19,20 +19,20 @@ use Symfony\Cmf\Bundle\RoutingBundle\Doctrine\Phpcr\Route;
 class CMSSitemapBridgeManager
 {
     /**
-     * array
+     * @var array
      */
     protected $configurations;
 
     public function __construct()
     {
+        $this->configurations = array();
     }
 
     /**
-     * @param array $configuration
-     *
+     * @param  array $urlConfiguration
      * @return $this
      */
-    public function addUrlConfiguration($urlConfiguration)
+    public function addUrlConfiguration(array $urlConfiguration)
     {
         $initialUrlConfiguration = array(
             'excluded' => array()
@@ -56,7 +56,13 @@ class CMSSitemapBridgeManager
      */
     public function getExcludedUrls()
     {
-        return $this->configurations['url']['excluded'];
+        $excludedUrls = array();
+
+        if (isset($this->configurations['url']['excluded'])) {
+            $excludedUrls = $this->configurations['url']['excluded'];
+        }
+
+        return $excludedUrls;
     }
 
     /**
