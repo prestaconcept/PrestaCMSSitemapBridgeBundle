@@ -1,6 +1,6 @@
 <?php
 /**
-* This file is part of the sandbox project
+* This file is part of the PrestaCMSSitemapBridgeBundle
  *
  * (c) PrestaConcept <www.prestaconcept.net>
  *
@@ -15,7 +15,6 @@ use Presta\CMSSitemapBridgeBundle\Model\CMSSitemapBridgeManager;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Service\SitemapListenerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
-use Symfony\Cmf\Bundle\RoutingExtraBundle\Document\RedirectRoute;
 
 /**
  * SitemapListener
@@ -40,8 +39,9 @@ class PrestaSitemapListener implements SitemapListenerInterface
     protected $cmsSitemapBridgeManager;
 
     /**
-     * @param WebsiteManager $websiteManager
-     * @param RouteManager   $routerManager
+     * @param WebsiteManager            $websiteManager
+     * @param RouteManager              $routerManager
+     * @param CMSSitemapBridgeManager   $cmsSitemapBridgeManager
      */
     public function __construct(WebsiteManager $websiteManager, RouteManager $routerManager, CMSSitemapBridgeManager $cmsSitemapBridgeManager)
     {
